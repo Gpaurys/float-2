@@ -1,0 +1,191 @@
+/* ========= Reset styles ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(.5em + .5vw);
+}
+body {
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-weight: lighter;
+}
+
+header, footer {
+    background-color: rgb(187, 187, 187);
+}
+header nav ul {
+    width: auto;
+    list-style-type: none;
+}
+
+/* ========= Pseudoraspork styles ========= */
+header .header-top::after, 
+header nav ul::after,
+header .header-bottom::after,
+main ul::after,
+main article.services,
+main article.recent-work,
+footer,
+footer nav ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ========= Header styles ========= */
+header {
+    margin-bottom: 1em;
+    padding: 2em 8em 1em;
+}
+
+/* ========= Header-top styles ========= */
+header .header-top {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+}
+header .header-top section.logo {
+    width: auto;
+    font-weight: 100;
+    font-size: 3em;
+    margin: auto;
+    margin-left: 0;
+}
+header .header-top nav {
+    width: auto;
+    margin-right: 1em;
+    margin: auto;
+    margin-right: 0;
+}
+header .header-top nav ul li {
+    float: left; 
+    margin-left: 1em;
+    font-size: 1.2em; 
+}
+
+/* ========= Header-bottom styles ========= */
+header .header-bottom {
+    width: 100%;
+}
+header .header-bottom section.intro {
+    float: left;
+    width: 22em;
+    margin-right: 2em;
+}
+header .header-bottom section.intro > h1 {
+    font-size: 3em;
+    font-weight: 400;
+}
+header .header-bottom section.intro > p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+figure {
+    width: 50em;
+    height: 15em;
+    float: right;
+    background-color: rgb(161, 161, 161);
+    line-height: 15em;
+    padding-left: 4em;
+}
+figure figcaption {
+    font-size: 1.4em;
+    line-height: normal;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* ========= Main styles ========= */
+main {
+    margin-bottom: 2em;
+    padding: 0 8em 0 7em;
+}
+
+/* ========= Main Dot styles ========= */
+main ul {
+    margin-right: 7em;
+}
+main ul li {
+    color: rgb(170, 170, 170);
+    font-size: 2.5em;
+    float: right;
+    padding-right: .5em;
+    margin-bottom: .5em;
+}
+
+/* ========= Main Services styles ========= */
+main article.services {
+    width: 100%;
+    margin-bottom: 4em;
+}
+main article.recent-work {
+    width: 100%;
+    margin-bottom: 3em;
+}
+main article.services .block,
+main article.recent-work .block {
+    width: calc(100% / 3 - 2em);
+    background-color: rgb(187, 187, 187);
+    margin-left: 3em;
+    line-height: 13em;
+    padding: 5em 0;
+    text-align: center;
+    min-height: 13em;
+    float: left;
+}
+main article.services .block:first-of-type {
+    margin-left: 0;
+}
+main article.recent-work .block:first-of-type {
+    margin-left: 0;
+}
+main article.services .block span {
+    font-size: 1.7em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+main article.recent-work .block span {
+    font-size: 1.7em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+/* ========= Main Twitter styles ========= */
+main article.twitter {
+    width: auto;
+    background-color: rgb(187, 187, 187);
+}
+main article.twitter > p {
+    font-size: 1.5em;
+    padding: 1.2em 2.5em;
+    
+}
+
+/* ========= Footer styles ========= */
+footer {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 2em 7em;
+    display: flex;
+}
+footer nav {
+    margin: auto;
+    margin-left: 0;
+}
+footer nav ul {
+    list-style-type: none;
+}
+footer nav ul li {
+    float: left;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+footer section.copy {
+    margin: auto;
+    margin-right: 1em;
+}
+footer section > p {
+    font-size: 1.2em;
+}
